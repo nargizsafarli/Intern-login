@@ -47,7 +47,10 @@ function Login() {
       </div>
       
       <span className='error'>{error.message}</span>
-      
+      <div className='remember-me'>
+        <input type='checkbox' id='remember' />
+        <label htmlFor='remember'>Remember me</label>
+      </div>
       <button className='loginBtn' onClick={handleLogin}>Login</button>
       
       <p className='register-link'>Don't have an account? <Link to="/">Register</Link></p>
@@ -62,4 +65,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Login;

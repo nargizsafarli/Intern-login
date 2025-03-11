@@ -73,14 +73,7 @@ function Register() {
         </div>
         <span className='error'>{error.password}</span>
       </div>
-      
-      <div className='remember-me'>
-        <input type='checkbox' id='remember' />
-        <label htmlFor='remember'>Remember me</label>
-      </div>
-
-      <button className='registerBtn' onClick={handleSubmit}>Register</button>
-      
+      <button className='registerBtn' onClick={handleSubmit}>Register</button> 
       <h4 className='account'>Do you have an account? <Link to="/login">Login</Link></h4>
     </div>
   );

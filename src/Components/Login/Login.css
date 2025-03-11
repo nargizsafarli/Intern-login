@@ -92,6 +92,16 @@
         color: rgb(94, 92, 92);
     }
 }
+.remember-me {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.remember-me input {
+    margin-right: 8px;
+}
 .password-input{
     position: relative;
 }
