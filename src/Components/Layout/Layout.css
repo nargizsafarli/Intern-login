@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.layout {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Arxa fon üçün şəkil */
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/bg27-l.jpg");
+    filter: brightness(0.9);
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+
+/* Topların olduğu div */
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Formun olduğu div */
+.content {
+    z-index: 9;
+    background-color: rgba(247, 248, 248, 0.863);
+    padding: 30px;
+    width: 570px;
+    height: 600px;
+    margin: 20px;
+    border-radius: 50px;
+    backdrop-filter: blur(4px); /* Şəffaflıq effekti */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
