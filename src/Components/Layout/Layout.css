@@ -14,7 +14,6 @@
     align-items: center;
 }
 
-/* Arxa fon üçün şəkil */
 .background {
     position: absolute;
     width: 100%;
@@ -41,9 +40,9 @@
     padding: 30px;
     width: 570px;
     height: 600px;
-    margin: 20px;
+    margin: 90px 20px 70px 20px;
     border-radius: 50px;
-    backdrop-filter: blur(4px); /* Şəffaflıq effekti */
+    backdrop-filter: blur(4px);
     display: flex;
     align-items: center;
     justify-content: center;

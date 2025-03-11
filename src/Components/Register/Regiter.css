@@ -56,6 +56,12 @@
     color: #fff;
     transition: all 0.3s ease;
 }
+.eye-input{
+    position: relative;
+}
+.eye-icon{
+    position: absolute;
+}
 .account{
     margin-top: 20px;
     font-size: 16px;
