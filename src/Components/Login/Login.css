@@ -92,3 +92,12 @@
         color: rgb(94, 92, 92);
     }
 }
+.password-input{
+    position: relative;
+}
+.eye-icon{
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    font-size: 18px;
+}

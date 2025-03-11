@@ -6,11 +6,14 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaInstagram } from "react-icons/fa6";
+import { IoEyeOffOutline } from "react-icons/io5";
+import { MdOutlineRemoveRedEye } from "react-icons/md";
 
 function Login() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState({});
+  const [showPassword,setShowPassword]=useState(false)
   
   const handleLogin = () => {
     let newError = {};
@@ -36,8 +39,11 @@ function Login() {
         <input type='text' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
       </div>
       
-      <div className='form-group'>
-        <input type='password' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+      <div className='form-group password-input'>
+        <input type={showPassword? "text" : 'password'} placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+        <div className='eye-icon' onClick={()=>setShowPassword(!showPassword)}>
+          {showPassword? <MdOutlineRemoveRedEye/> :<IoEyeOffOutline /> }
+        </div>
       </div>
       
       <span className='error'>{error.message}</span>
